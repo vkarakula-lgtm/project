@@ -1,0 +1,29 @@
+body {
+    background-color: #fff3f4;
+}
+
+h1 {
+    color: brown;
+}
+
+.intro {
+    color: #a95e13;
+}
+
+h2 {
+    color: #704214;
+}
+
+.green {
+    color: green;
+}
+
+.espresso {
+    width: 128px;
+    height: 128px;
+}
+
+blockquote {
+    background-color: pink;
+    padding: 8px;
+}
