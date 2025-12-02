@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylenew.css">
+    <title>Kawa</title>
+</head>
+
+<body style="background-color:#fff3f4;">
+
+<h1 style="color:brown">Kawa</h1>
+<p style="color:#a95e13">Krótka informacja o kawie.</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.
+</button>
+
+<p id="demo"></p>
+
+<button onclick="checkCoffeeStrength()">Śprawdz moc kawy</button>
+<p id="coffeeResult"></p>
+
+<hr>
+
+<h2 style="color:#704214;">1. Skąd pochodzi kawa?</h2>
+<p>Kawa pochodzi z <b>Etiopii</b>. Legenda mówi, że pasterz Kaldi zauważył, jak jego kozy stały się pełne energii po zjedzeniu owoców kawowca.</p>
+<p>Dziś kawa rośnie w wielu krajach, takich jak <span style="color:green;">Brazylia</span>, <span style="color:green;">Kolumbia</span> i <span style="color:green;">Wietnam</span>.</p>
+<img src="https://pix4free.org/assets/library/2020-12-18/originals/coffee026.jpg" width="250" alt="Ziarna kawy">
+
+<ul>
+  <li>Arabica – delikatna i aromatyczna</li>
+  <li>Robusta – mocniejsza i bardziej gorzka</li>
+</ul>
+<p>Więcej informacji: 
+<a href="https://pl.wikipedia.org/wiki/Kawa" target="_blank">Wikipedia: Kawa</a></p>
+
+<hr>
+
+<h2 style="color:#704214;">2. Rodzaje kaw w filiżance</h2>
+<p>Istnieje wiele rodzajów kawy, które różnią się smakiem, mocą i sposobem przygotowania. Każdy napój ma swoje cechy charakterystyczne, a odpowiednio przygotowana filiżanka kawy może dostarczyć niepowtarzalnego aromatu i przyjemności.</p>
+<p>Kawa dodaje energii i poprawia nastrój, a jej bogaty aromat ceniony jest przez miłośników tego napoju na całym świecie.</p>
+<img src="C:\Users\lerak\Downloads\espresso.jpeg" alt="Filiżanka espresso" style="width:128px;height:128px;">
+<ol>
+  <li>Espresso – mała, bardzo mocna kawa</li>
+  <li>Americano – espresso + gorąca woda</li>
+  <li>Cappuccino – espresso + spienione mleko.</li>
+  <li>Latte – espresso + dużo mleka.</li>
+  <li>Flat white – podwójne espresso + cienka warstwa mleka.</li>
+</ol>
+<p>Dowiedz się więcej:
+<a href="https://kawa.pl/blogs/artykuly/metody-parzenia-kawy-czyli-9-sposobow-na-przygotowanie-kawy" target="_blank">Metody parzenia kawy</a></p>
+
+<hr>
+
+<h2 style="color:#704214;">3. Kultura picia kawy</h2>
+<p>W różnych krajach kawa ma różne znaczenie. We <b>Włoszech</b> pije się espresso na stojąco, a w <b>Turcji</b> dodaje się przyprawy, takie jak kardamon.</p>
+<p>Kawa to rytuał spotkań i odpoczynku.</p>
+<img src="https://foolproofliving.com/wp-content/uploads/2016/02/05-8434-post/How-to-make-Turkish-Coffee-2-11158-Edit-3.jpg" width="250" alt="Turecka kawa">
+<p>Zobacz także:
+<a href="https://www.travelplanet.pl/blog/jak-pije-sie-kawe-na-swiecie/" target="_blank">Jak pije się kawę na świecie</a></p>
+
+<blockquote style="background-color:pink; padding:8px;">
+„Najsmutniejszy z napoi — filiżanka słabej herbaty.”
+</blockquote>
+<p><cite> - Katherine Mansfield </cite> .</p>
+
+<script>
+  function checkCoffeeStrength() {
+    let grams = prompt("Ile gramów kawy używasz na 100 ml wody?");
+    grams = Number(grams);
+
+    if (grams >= 8) {
+      document.getElementById("coffeeResult").innerHTML = "Ta kawa będzie mocna!";
+    } else if (grams >= 5) {
+      document.getElementById("coffeeResult").innerHTML = "To jest normalna, średnia moc.";
+    } else {
+      document.getElementById("coffeeResult").innerHTML = "Kawa będzie słaba.";
+    }
+  }
+</script>
+
+</body>
+</html>
+
